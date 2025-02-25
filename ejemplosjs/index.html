@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>Creador de Contenido</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>Crea tu página de contenido</h1>
+            <style>
+                .nav-link {
+                    color: white !important;
+                }
+            
+                .nav-link:hover {
+                    color: #ddd !important;
+                }
+            </style>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" onclick="nuevoTitulo()">Título</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="nuevoParrafo()">Párrafo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Imagen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="nuevoEnlace()">Enlace</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="imprimir()">Imprimir</a>
+                </li>
+            </ul>
+
+            <div class="mt-4 p-4 bg-light text-dark rounded">
+                <!-- Área de entrada de texto -->
+                <div class="row">
+                    <label for="texto">Escribe tu contenido:</label>
+                    <textarea id="texto" rows="4" class="form-control"></textarea>
+                </div>
+                
+                <!-- Input para subir imágenes -->
+                <div class="row mt-3">
+                    <label for="imagen">Selecciona una imagen:</label>
+                    <input type="file" id="imagen" class="form-control">
+                </div>
+
+                <!-- Contenedor donde se agregará el contenido -->
+                <div class="card mt-4 p-3" id="contenido"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluir el archivo JavaScript -->
+    <script src="js/contenido.js"></script>
+</body>
+</html>
